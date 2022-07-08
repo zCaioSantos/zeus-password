@@ -36,9 +36,10 @@ const PasswordGenerationForm = () => {
     }
 
     return (
-        <form onSubmit={generatePassword} className="flex flex-col gap-2">
+        <form onSubmit={generatePassword} className="w-full flex flex-col gap-2">
 
             <Input placeholder="Name or E-mail" type="text" copy={false} handOnChange={handOnChange} icon={<FaUserAlt color="bbbbbb" size={13} />} />
+
             <Input
                 placeholder="Generated password"
                 type="text"
@@ -48,7 +49,7 @@ const PasswordGenerationForm = () => {
                 disabled
             />
 
-            <button type="submit" className="max-w-[275px] h-14 p-3 rounded-xl text-base mt-4 font-bold text-black bg-white transition-all hover:bg-transparent hover:border-[0.5px] hover:border-white hover:text-white">
+            <button type="submit" className="w-full max-w-full sm:max-w-[275px] h-14 p-3 rounded-xl text-base mt-4 font-bold text-black bg-white transition-all hover:bg-transparent hover:border-[0.5px] hover:border-white hover:text-white">
                 To generate
             </button>
 
